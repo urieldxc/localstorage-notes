@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+
+$fondo-base: #ffff;
+$color-borde : #dddddd;
+
+$note-yellow: #FFEE58;
+$note-pink: #FFCEE0;
+$note-blue: #C9EFEB;
+$note-green: #B8FF97;
+$note-orange: #FFB258;
+$note-violet: #C7C9FC;
+$note-red: #ff5858;
+
+
+*{
+    padding: 0;
+    margin:0;
+    font-family: "Roboto";
+}
+
+.main-container{
+    display: flex;
+}
+
+
+.navbar{
+    width: 12rem;
+    height: 100vh;
+    background: $fondo-base;
+    border-right: 3px solid $color-borde;
+    text-align: center;
+    h3{
+        font-size: 1.5rem;
+        margin-top: 2.25rem;
+    }
+    .bolas{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        .bolas-colores{
+            cursor: pointer;
+            width: 35px;
+            padding-top: 2rem;
+            transition: 1s;
+        }
+
+        #nueva-nota{
+            width: 50px;
+            margin-top: 3.75rem;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+    
+        .active{
+            transform: rotate(45deg);
+            transition-duration: 0.5s
+        }
+        .hidden{
+            visibility: hidden;
+            opacity: 0;
+            transition:  opacity 300ms;
+        }
+    }
+}
+
+.note-container{
+    background-color: $fondo-base;
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-left: 4.375rem;
+    margin-right: 4.375rem;
+
+    .search-div{
+        display: flex;
+    }
+    .search-div input{
+        font-size: 1.25rem;
+        border: none;
+        margin-left: .5rem;
+    }
+    h2{
+        margin-top: 3.5rem;
+        font-size: 3rem;
+    }
+
+    .note-grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 4rem;
+        margin-top: 2rem;
+        width: auto;
+        height: 300px;
+    }
+
+    .note{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        padding: 1rem;
+        border-radius: 20px;
+        background: $note-yellow;
+        max-width: 16rem;
+        min-height: 16rem;
+         .title-and-delete{
+            #note-title{
+                font-size: 1rem;
+                font-weight: bold;
+                border: none;
+            } 
+            img{
+                cursor: pointer;
+            }
+         }
+        
+        textarea{
+            padding-top: 0.5rem;
+            background: none;
+            font-size: 1rem;
+            border: none;
+            resize: none;
+        }
+    }
+
+    .hiddenDiv{
+        display: none;
+        width: 0;
+    }
+}
+
+.yellow{
+    background: $note-yellow !important;
+}
+.pink{
+    background: $note-pink !important;
+}
+.blue{
+    background: $note-blue !important;
+}
+.green{
+    background: $note-green !important;
+}
+.orange{
+    background: $note-orange !important;
+}
+.violet{
+    background: $note-violet !important;
+}
+.red{
+    background: $note-red !important;
+}

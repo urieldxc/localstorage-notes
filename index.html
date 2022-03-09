@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App - Sergio Tomás</title>
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+
+
+    <div class="main-container">
+
+        <section class="navbar">
+            <h3>Sergio</h3>
+            <div class="bolas">
+                <img id="nueva-nota" src="public/add-note.svg" alt="Añadir nota">
+                <img data-color="red" id="bola-roja" class="bolas-colores hidden" src="public/bola-roja.svg" alt="Color rojo">
+                <img data-color="orange" id="bola-naranja" class="bolas-colores hidden" src="public/bola-naranja.svg" alt="Color naranja">
+                <img data-color="yellow" id="bola-amarilla" class="bolas-colores hidden" src="public/bola-amarilla.svg" alt="Color amarillo">
+                <img data-color="green" id="bola-verde" class="bolas-colores hidden" src="public/bola-verde.svg" alt="Color verde">
+                <img data-color="blue" id="bola-azul" class="bolas-colores hidden" src="public/bola-azul.svg" alt="Color azul">
+                <img data-color="violet" id="bola-violeta" class="bolas-colores hidden" src="public/bola-violeta.svg" alt="Color violeta">
+                <img data-color="pink" id="bola-rosa" class="bolas-colores hidden" src="public/bola-rosa.svg" alt="Color rosa">
+            </div> 
+        </section>
+
+        <section class="note-container">
+
+            <div class="search-div">
+                <img src="public/search-icon.svg" alt="">
+                <input type="text" placeholder="Buscar">
+            </div>
+
+            <h2>Notas</h2>
+            <div class="note-grid">
+                <div class="hiddenDiv"></div>
+            </div>
+        </section>
+
+    </div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.main-container {
+  display: flex;
+}
+
+.navbar {
+  width: 12rem;
+  height: 100vh;
+  background: #ffff;
+  border-right: 3px solid #dddddd;
+  text-align: center;
+}
+.navbar h3 {
+  font-size: 1.5rem;
+  margin-top: 2.25rem;
+}
+.navbar .bolas {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+}
+.navbar .bolas .bolas-colores {
+  cursor: pointer;
+  width: 35px;
+  padding-top: 2rem;
+  transition: 1s;
+}
+.navbar .bolas #nueva-nota {
+  width: 50px;
+  margin-top: 3.75rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.navbar .bolas .active {
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+}
+.navbar .bolas .hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.note-container {
+  background-color: #ffff;
+  width: 100%;
+  margin-top: 2.5rem;
+  margin-left: 4.375rem;
+  margin-right: 4.375rem;
+}
+.note-container .search-div {
+  display: flex;
+}
+.note-container .search-div input {
+  font-size: 1.25rem;
+  border: none;
+  margin-left: 0.5rem;
+}
+.note-container h2 {
+  margin-top: 3.5rem;
+  font-size: 3rem;
+}
+.note-container .note-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 4rem;
+  margin-top: 2rem;
+  width: auto;
+  height: 300px;
+}
+.note-container .note {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 20px;
+  background: #FFEE58;
+  max-width: 16rem;
+  min-height: 16rem;
+}
+.note-container .note .title-and-delete #note-title {
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+}
+.note-container .note .title-and-delete img {
+  cursor: pointer;
+}
+.note-container .note textarea {
+  padding-top: 0.5rem;
+  background: none;
+  font-size: 1rem;
+  border: none;
+  resize: none;
+}
+.note-container .hiddenDiv {
+  display: none;
+  width: 0;
+}
+
+.yellow {
+  background: #FFEE58 !important;
+}
+
+.pink {
+  background: #FFCEE0 !important;
+}
+
+.blue {
+  background: #C9EFEB !important;
+}
+
+.green {
+  background: #B8FF97 !important;
+}
+
+.orange {
+  background: #FFB258 !important;
+}
+
+.violet {
+  background: #C7C9FC !important;
+}
+
+.red {
+  background: #ff5858 !important;
+}
+
+/*# sourceMappingURL=style.css.map */
